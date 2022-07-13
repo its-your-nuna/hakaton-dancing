@@ -1,0 +1,79 @@
+
+$dark:   #15171E;
+$white:  mix($dark, white, 20%);
+$red:    #FD0000;
+$citron: #FDFD00;
+$purple: #A0038B;
+
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: system-ui, sans-serif;
+    margin: 2rem;
+    background: url("https://kartinkin.net/uploads/posts/2021-07/thumbs/1625785877_24-kartinkin-com-p-stsena-v-klube-art-art-krasivo-26.jpg");
+    background-size: 100%;
+  }
+.buttons{
+  width: 500px;
+  height: 250px;
+  margin-bottom: 70%;
+  background-color: rgb(0, 0, 0,0.5);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.but{
+  width: 100px;
+}
+
+
+.discoBtn {
+  position: relative;
+  display: inline-block;
+  margin:  5px;
+  padding: 1rem 1.9rem;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 3px solid transparent;
+    transition: border-width 0.25s;
+    border-image: linear-gradient(135deg,$purple, $red, $citron);
+    border-image-slice: 1;
+    pointer-events: none;
+    filter: hue-rotate(0deg);
+    animation: 0.5s linear 0s infinite normal both paused hueShift;
+  }
+  
+  &:hover:before {
+    border-width: 7px;
+    animation-play-state: running;
+    .images{
+      background-color: white;
+    }
+  }
+
+}
+
+@keyframes hueShift {
+  100% { filter: hue-rotate(360deg); }
+}
+
+ 
