@@ -65,9 +65,6 @@ body {
   &:hover:before {
     border-width: 7px;
     animation-play-state: running;
-    .images{
-      background-color: white;
-    }
   }
 
 }
@@ -75,5 +72,7 @@ body {
 @keyframes hueShift {
   100% { filter: hue-rotate(360deg); }
 }
-
+.images{
+ height: 350px;
+}
  

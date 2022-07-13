@@ -17,7 +17,7 @@ export const data = [
         id:1,
         gif: gif1,
         jpeg: jpg1,
-        style: {position:'absolute',marginLeft:"-15%",bottom:'-10%'}
+        style: {position:'absolute',marginLeft:"-15%",bottom:'-5%'}
     },
     {
         id:2,
@@ -35,7 +35,7 @@ export const data = [
         id:4,
         gif: gif4,
         jpeg: jpg4,
-        style: {position:'absolute',marginLeft:"30%",bottom:'-4%'}
+        style: {position:'absolute',marginLeft:"40%",bottom:'0%'}
     },
     {
         id:5,
@@ -47,13 +47,13 @@ export const data = [
         id:6,
         gif: gif6,
         jpeg: jpg6,
-        style: {position:'absolute',marginLeft:"20%",bottom:'13%'}
+        style: {position:'absolute',marginLeft:"24%",bottom:'13%'}
     },
     {
         id:7,
         gif: gif7,
         jpeg: jpg7,
-        style: {position:'absolute',marginLeft:"5%",bottom:'3%'}
+        style: {position:'absolute',marginLeft:"5%",bottom:'0%'}
     }
 
 
